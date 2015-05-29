@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio sobre formularios</title>
+</head>
+<body>
+	<h1>Formulario de registro</h1>
+	<form action="proceso.php" method="POST" >
+		<fieldset>
+			<legend>Datos personales</legend>
+			<p>
+				<label for="nombre">Nombre: </label>
+				<input type="text" id="nombre" placeholder="Juan..." required>
+			</p>
+			<p>
+				<label for="apellidos">Apellidos: </label>
+				<input type="text" id="apellidos" placeholder="Perez..." required>
+			</p>
+			<p>
+				<label for="fecha_nacimiento">Fecha de nacimiento</label>
+				<input type="date" id="fecha_nacimiento" min="1916-01-01" max="1997-12-31" required>
+			</p>
+			<p>
+				<label for="sexo">Sexo: </label>
+				<input type="radio" id="sexo" value="1" checked/>Hombre
+				<input type="radio" id="sexo" value="2" />Mujer
+			</p>
+			<p>
+				<label for="hermanos">Numero de hermanos: </label>
+				<input type="number" id="hermanos" value="0">
+			</p>			
+			<p>
+				<label for="rfc">RFC: </label>
+				<input type="text" id="rfc" maxlength="13" placeholder="BERC840914BM6" required>
+			</p>
+
+			<p>
+				<label for="cp">CP: </label>
+				<input type="text" id ="cp" pattern="[0-9]{5}" title="Inserte un código postal válido">
+			</p>
+			<p>
+				<label for="twitter">Twitter: </label>
+				<input type="url" id="twitter">
+			</p>
+			<p>
+				<label for="grado">Grado academico: </label>
+				<select id="grado">
+					<option value="6">Doctorado</option>
+					<option value="5">Maestría</option>
+					<option value="4">Licenciatura</option>
+					<option value="3">Preparatoria</option>
+					<option value="2">Secundaria</option>
+					<option value="1">Primaria</option>
+				</select>
+			</p>
+			<p>
+				<label for="descripcion">Descripción personal: </label><br />
+				<textarea id="descripcion" cols="30"></textarea>
+			</p>
+		</fieldset>
+
+		<fieldset>
+			<legend>Datos de contacto</legend>
+			<p>
+				<label for="email">E-mail:</label>
+				<input type="email" id="email" placeholder="tucorreo@dominio.com" required>
+			</p>
+			<p>
+				<label for="celular">Celular:</label>
+				<input type="text" id="celular" title="No introducir espacios ni caracteres" maxlength="10" placeholder="9841201755">
+			</p>
+			<p>
+				<label for="telefono">Teléfono:</label>
+				<input type="text" id="telefono" title="No introducir espacios ni caracteres" maxlength="10" placeholder="9841093938">
+			</p>
+			
+		</fieldset>
+
+		<fieldset>
+			<legend>Datos de conexión</legend>
+			<p>
+				<label for="usuario">Usuario:</label>
+				<input type="text" id="usuario" required pattern=".{6,}" title="6 caracteres minimo">
+			</p>
+			<p>
+				<label for="contrasena">Contraseña:</label>
+				<input type="password" id="contrasena" required pattern=".{6,}"  title="6 caracteres minimo"> 
+			</p>
+		</fieldset>		
+			<p>
+				<input type="submit"> <input type="reset">
+			</p>
+
+	</form>
+	
+</body>
+</html>

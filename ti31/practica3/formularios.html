@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formularios</title>
+</head>
+<body>
+	<form action="proceso.php" method="POST">
+		<input type="hidden" name="tipo_registro" value="nuevo">
+
+		<fieldset>
+			<legend>Datos personales</legend>
+			<p>
+				<label for="nombre">Nombre: </label>
+				<input type="text" name="nombre" placeholder="Juan Perez..." autocomplete="off" required>
+			</p>
+			<p>
+				<label for="contrasena">Contraseña: </label>
+				<input type="password" name="contrasena">
+			</p>
+		</fieldset>
+		<p>
+			<label for="subscripcion">Subscripción: </label>
+			<input type="checkbox" name="revista" checked>Revista
+			<input type="checkbox" name="periodico">Periodico
+		</p>
+		<p>
+			<label for="sexo">Sexo: </label>
+			<input type="radio" name="sexo" value="hombre" checked>Hombre
+			<input type="radio" name="sexo" value="mujer">Mujer
+		</p>
+		<p>
+			<label for="correo">Correo electrónico</label>
+			<input type="email" name="correo" placeholder="correo@servidor.com" autofocus size="30">
+		</p>
+
+		<p>
+			<label for="telefono">Teléfono</label>
+			<input type="tel" name="telefono" placeholder="984 120 1755">
+		</p>
+		<p>
+			<label for="cp">CP</label>
+			<input type="text" name="cp" pattern="[0-9]{5}" title="Escribe solo numeros" value="77710">
+		</p>
+
+		<p>
+			<label for="fecha">Fecha de nacimiento: </label>
+			<input type="date" name="fecha">
+		</p>
+		<p>
+			<label for="edad">Edad: </label>
+			<input type="number" name="edad" min="18" max="99" readonly>
+		</p>
+		<p>
+			<label for="promedio">Promedio: </label>
+			<input type="range" name="promedio" min="0" max="10">
+		</p>
+		<p>
+			<label for="busqueda">Busqueda: </label>
+			<input type="search" name="busqueda">
+		</p>
+
+		<p>
+			<label for="pagina">Página personal: </label>
+			<input type="url" name="pagina" disabled value="http://www.wordpress.com">
+		</p>
+
+		<p>
+			<label for="numero_oficina">Numero de oficina: </label>
+			<input type="number" name="numero_oficina" maxlength="5">
+		</p>
+		<p>
+			<label for="rfc">RFC: </label>
+			<input type="text" name="rfc" maxlength="13">
+		</p>
+		<p>
+			<label for="descripcion">Deescripción</label>
+			<br>
+			<textarea name="descripcion" id="" cols="30" rows="10">Describe tus intereses...</textarea>
+		</p>
+		<p>
+		<select name="transporte">
+			<option value="auto">Auto</option>
+			<option value="Autobus">Autobús</option>
+			<option value="Avion">Avión</option>
+		</select>
+		</p>
+		<p>
+			<input list="navegadores">
+			<datalist id="navegadores">
+				<option value="Internet explorer"></option>
+				<option value="Firefox"></option>
+				<option value="Chrome"></option>
+				<option value="Opera"></option>
+				<option value="Safari"></option>
+			</datalist>
+		</p>
+
+		<button type="button" onclick="alert('Hola Mundo')">Clic aquí</button> 
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Limpiar">
+	</form>
+	
+</body>
+</html>

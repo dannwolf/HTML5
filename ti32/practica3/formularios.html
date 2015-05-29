@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formularios</title>
+</head>
+<body>
+	
+	<form action="proceso.php" method="POST">
+		<input type="hidden" id="id" name="id" value="20">
+
+		<p>
+			<label for="nombre">Nombre</label>
+			<input type="text" id="nombre" name="nombre" autocomplete="off" autofocus placeholder="Juan Perez..." required>
+		</p>
+		<p>
+			<label for="sexo">Sexo</label>
+			<input type="radio" id="sexo" name="sexo" vaue="hombre" checked>Hombre
+			<input type="radio" id="sexo" name="sexo" vaue="mujer">Mujer
+
+		</p>
+		<p>
+			<label for="clave">Contraseña</label>
+			<input type="password" id="clave" name="clave">
+		</p>
+
+		<p>
+			<label for="fecha">Fecha</label>
+			<input type="date" id="fecha" name="fecha" min="1916-01-01" value="2015-05-28">
+		</p>
+
+
+		<p>
+			<label for="buscar">Buscar</label>
+			<input type="search" id="buscar" name="buscar">
+		</p>
+
+
+
+
+		<p>
+			<label for="subscripcion">Subscripción</label>
+			<input type="checkbox" id="subscripcion" name="subscripcion" checked>
+		</p>
+		<p>
+			<label for="anios">Años cumplidos</label>
+			<input type="number" id="anios" name="anios" min="18" max="99">
+		</p>
+		<p><label for="cal">Calificación</label>
+			<input type="range" id="cal" name="cal">
+		</p>
+
+		<p>
+			<select name="transporte" id="transporte">
+				<option value="Auto">Auto</option>
+				<option value="Autobus">Autobús</option>
+				<option value="Avion">Avión</option>
+			</select>	
+		</p>
+		<p>
+			<textarea name="descripcion" id="descripcion" cols="100" rows="10">Descripción profesional</textarea>
+		</p>
+
+		<fieldset>
+			<legend>Datos de contacto</legend>
+			<p>
+			<label for="correo">Correo electrónico</label>
+			<input type="email" id="correo" name="correo" required>
+		</p>
+		<p><label for="pagina">Página personal</label>
+			<input type="url" id="pagina" name="pagina" size="50">
+		</p>
+		<p><label for="telefono">Teléfono</label>
+			<input type="tel" id="telefono" name="telefono"  pattern="[0-9]{10}" title="Escribe solo numeros" placeholder="9841093938">
+		</p>
+		</fieldset>
+
+		<fieldset>
+			<legend>Dirección</legend>
+
+		<p>
+			<label for="cp">CP</label>
+			<input type="text" pattern="[0-9]{5}" title="Inserte un código postal válido">
+		</p>
+		<p>
+			<label for="ciudad">Ciudad</label>
+			<input type="text" id="ciudad" name="ciudad" value="Playa del Carmen" readonly>
+		</p>
+		</fieldset>
+		<p>
+		<input list="navegadores">
+		<datalist id="navegadores">
+			<option value="Internet Explorer"></option>
+			<option value="Firefox"></option>
+			<option value="Chrome"></option>
+			<option value="Opera"></option>
+			<option value="Safari"></option>
+		</datalist>
+		</p>
+		
+		
+		<button type="button" onclick="alert('Hola mundo')">Clic Aquí!</button>
+		
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Limpiar">
+
+	</form>
+	
+</body>
+</html>

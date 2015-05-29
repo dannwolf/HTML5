@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contenido multimedia</title>
+</head>
+<body>
+
+	<h2>Audio</h2>
+	<audio src="../../audio/audio2.mp3" controls >
+		<p>Tu navegador no soporta la etiqueta audio</p>
+	</audio>
+
+	<audio controls>
+		<source src="../../audio/horse.mp3" type="audio/mpeg">
+		<source src="../../audio/horse.ogg" type="audio/ogg">
+		<p>Tu navegador no soporta la etiqueta audio</p>
+	</audio>
+	
+	<hr>
+	
+	<h2>Video</h2>
+	<video src="../../video/video1.mp4" controls width="400" poster="../../Layouts/img/pradera.jpg">
+		
+	</video>
+	
+	<canvas id="lienzo" width="200" height="200" style="background:#999999;">
+		<p>SU navegador no soporta Canvas</p>	
+	</canvas>
+
+	<canvas id="micanvas" width="300" height="300" style="border:1px solid #d3d3d2;"></canvas>
+
+	<script>
+		var c = document.getElementById("micanvas");
+		var ctx = c.getContext("2d");
+		ctx.beginPath();
+		ctx.arc(95,50,40,0,2*Math.PI);
+		ctx.stroke();
+	</script>
+	
+	<h2>Embed</h2>
+	<embed src="../practica1/documento-base.html">
+
+	<h2>Iframe</h2>
+	<iframe src="../practica1/documento-base.html"></iframe>	
+	
+</body>
+</html>

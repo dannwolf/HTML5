@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formularios</title>
+</head>
+<body>
+	<form action="proceso.php" method="POST">
+		<fieldset>
+			<legend>Datos personales</legend>
+			<input type="hidden" name="tipo" value="nuevo">
+		<label for="nombre">Nombre: </label>
+		<input name="nombre" type="text" required placeholder="Juan Perez..."/>
+		<br>
+		<label for="sexo">Sexo: </label>
+		<input type="radio" name="sexo" value="1" checked/>Hombre
+		<input type="radio" name="sexo" value="2" />Mujer
+		<br>
+		<label for="descripcion">Descripción: </label>
+		<textarea name="descripcion"></textarea>
+		<br>
+		<label for="contrasena">Contraseña: </label>
+		<input type="password" name="contrasena">
+		<br>
+		<label for="transporte">Transporte: </label>
+		<select name="transporte">
+			<option value="1">Auto</option>
+			<option value="2">Autobús</option>
+			<option value="3">Avión</option>
+		</select>
+		<br>
+		<label for="correo">Correo electrónico</label>
+		<input type="email" name="correo" autofocus>
+		<br>
+		<label for="busqueda">Busqueda: </label>
+		<input type="search" name="busqueda" min="2" max="5">
+		<br>
+		<label for="edad">Edad: </label>
+		<input type="number" name="edad" min="18" max="99">
+		<br>
+		<label for="fecha">Fecha: </label>
+		<input type="date" name="fecha">
+		<br>
+		<label for="pagina">Página personal: </label>
+		<input type="url" name="pagina">
+		<br>
+		<label for="telefono">Telefono: </label>
+		<input type="tel" name="telefono">
+		<br>		
+		<p>
+			<input list="browsers">
+			<datalist id="browsers">
+			  <option value="Internet Explorer">
+			  <option value="Firefox">
+			  <option value="Chrome">
+			  <option value="Opera">
+			  <option value="Safari">
+			</datalist>
+		</p>
+		<p>
+			<label for="cp">CP: </label>
+			<input type="text" pattern="[0-9]{5}" title="Inserte un código postal válido">
+		</p>
+		<p>
+			<label for="cal">Calificación: </label>
+			<input type="range" name="cal" min="0" max="10">
+		</p>
+		 <button type="button" onclick="alert('Hola Mundo!')">Clic aquí!</button>
+		<input type="submit">
+		<input type="reset">
+		</fieldset>
+	</form>
+</body>
+</html>

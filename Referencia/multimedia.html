@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contenido multimedia</title>
+</head>
+<body>
+	<h2>Audio</h2>
+	<!--<audio src="../audio/audio.mp3" controls autoplay loop>
+	</audio>-->
+<br /><br />
+
+	<audio controls>
+		<source src="../audio/horse.ogg" type="audio/ogg">
+  		<source src="../audio/horse.mp3" type="audio/mpeg">
+  	</audio>
+<br /><br />
+<h2>Video</h2>
+  	<video src="../video/video1.mp4" controls width="400" poster="../Layouts/img/pradera.jpg"></video>
+<br><br>
+
+<h2>Canvas</h2>
+  	<canvas id="lienzo" width="200" height="200" style="background:#999999">
+  		Su navegador no es compatible con canvas
+  	</canvas>
+  	<br>
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+Su navegador no es compatible con canvas</canvas>
+
+<h2>Iframe</h2>
+<iframe src="http://www.utrivieramaya.edu.mx"></iframe> 
+
+<h2>Embed</h2>
+ <embed src="http://www.utrivieramaya.edu.mx"> 
+
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(95,50,40,0,2*Math.PI);
+ctx.stroke();
+</script> 
+
+</body>
+</html>
