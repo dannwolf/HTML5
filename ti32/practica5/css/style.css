@@ -1,0 +1,85 @@
+/*
+@import "reset.css";
+@import 'reset.css';
+@import url('reset.css');
+@import url("reset.css");
+*/
+
+body{
+	background-color: #f2f2f2;
+	font-size: 18px;
+}
+p{
+	font-family: arial;
+	font-size: 1em;
+}
+
+h1, h2, h3{
+	color: blue;
+}
+
+h1{ text-align: center; }
+h2{ font-size: 18pt; }
+h3{	font-size: 22pt; }
+ul{ list-style-type: none; }
+
+
+section{
+	width: 80%;
+	float: left;
+}
+aside{
+	float: left;
+	width: 20%;
+}
+aside ul{
+	list-style-type: square;
+}
+
+nav ul li{
+	display: inline;
+}
+
+footer{
+	clear: both;
+}
+
+.resaltado{
+	color: red;
+}
+
+.clase2{
+	font-size: 26px;
+}
+
+.clase3{
+	font-weight: bold;
+}
+
+#container{
+	width: 80%;
+	margin: 0 auto;
+}
+
+#impresion{
+	display: none;
+}
+
+@media print {
+	body{
+		font-size: 26px;
+	}
+	aside{
+		display: none;
+	}
+	nav{
+		display: none;
+	}
+	#impresion{
+		display: block;
+	}
+
+	header h1{
+		display: none;
+	}
+}
