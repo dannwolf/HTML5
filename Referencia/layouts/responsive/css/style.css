@@ -1,0 +1,144 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+/*Estilos generales*/
+body{
+	background-color: #fff;
+	color: #333;
+	font-family: verdana serif;
+}
+
+h1{
+	color:#CCCCB2;
+}
+
+h3{
+	padding: 20px 0;
+}
+
+p{
+	margin-bottom: 20px;
+	text-align: justify;
+}
+
+li{
+	list-style-type: none;
+}
+li a{
+	text-decoration: none;
+}
+li a:hover{
+	text-decoration: none;
+}
+
+/*Principal del sitio*/
+header{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 20px 0 0 0;
+}
+nav{
+	margin: 10px 0 0 0;
+	padding: 10px 0;
+	background-color: #024959;
+}
+nav li{
+	display: inline;
+}
+nav li a{
+	padding: 5px 20px;
+	color: #fff;
+}
+nav li a:hover{
+	background-color: #037E8C;
+}
+
+nav li span{
+	margin-right: 10px;
+}
+.menu{
+	display: none;
+}
+
+/*Secciones*/
+section{
+	box-sizing: border-box;
+	width: 80%;
+	padding: 0 20px;
+	float: left;
+}
+
+article{
+	border-bottom: 1px dashed #000;
+}
+article img{
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+}
+
+aside{
+	box-sizing: border-box;
+	padding: 20px;
+	width: 20%;
+	float: left;
+}
+
+footer{
+	clear: left;
+	padding: 20px;
+}
+@media (max-width: 655px) {
+	h1{
+		padding: 0 20px;
+		font-size: 1.8em;
+		text-align: center;
+	}
+	.menu{
+		display: block;
+		width: 100%;
+		background-color: #ccc;
+	}
+	.menu .btn{
+		display: block;
+		padding: 20px;
+		font-size: 24px;
+		background-color: #024959;
+		color: #fff;
+		text-decoration: none;
+		font-weight: bold;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.menu span{
+		float: right;
+		font-size: 30px;
+
+	}
+	nav{
+		width: 80%;
+		height: 30%;
+		margin: 0;
+		left:-100%;
+		position: fixed;
+		text-align: left;
+	}
+	nav li{
+		display: block;
+		border-bottom: 1px solid rgba(255,255,255, .3);
+	}
+
+	nav li a{
+		display: block;
+	}
+
+	section{
+		width: 100%;
+	}
+	aside{
+		width: 100%;
+	}
+}
