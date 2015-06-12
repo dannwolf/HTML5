@@ -1,0 +1,11 @@
+ul{
+	list-style-type: none;
+}
+nav ul li{
+	display: inline;
+}
+
+#container{
+	width: 90%;
+	margin: 0 auto;
+}

@@ -1,0 +1,49 @@
+/*Estilos generales*/
+body{
+	background-color: #e9e9e9;
+}
+
+h1{
+	text-align: center;
+}
+
+nav{
+	/*background-color: lightblue;*/
+	padding: 3px 0;
+	/*border-radius: 10px;*/
+}
+
+nav ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+nav ul li{
+	display: inline;
+	padding: 5px;
+}
+
+nav a{
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+	padding: 5px;
+
+}
+
+nav a:hover{
+	background-color: #f2f2f2;
+	padding: 5px;
+	border-radius: 5px;
+	text-decoration: underline;
+}
+
+section h2{
+	margin-top: 0;
+}
+
+/*Estilos de estructura*/
+#container{
+	width: 90%;
+	margin: 0 auto;
+}
