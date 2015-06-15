@@ -14,12 +14,20 @@
 		height: auto;
 	}
 
+	nav{
+		background-color: white;
+		overflow: hidden;
+		display: none;
+	}
+
 	nav ul li{
 		display: block;
+		width: 50%;
+		float: left;
 	}
 
 	nav ul li a{
-		color: white;
+		color: #000;
 	}
 
 	nav ul li a:hover{
@@ -27,9 +35,30 @@
 		text-decoration: none;
 	}
 
+	nav ul li span{
+		padding-right: 5px;
+	}
+
 	#barra{
 		display: none;
 	}
+
+	#menu{
+		font-size: 20px;
+		width: 100#;
+		background-color: white;
+	}
+	#menu .bt-menu{
+		display: block;
+		padding: 10px;
+		text-decoration: none;
+		color: #333;
+		font-weight: bold;
+	}
+
+	#menu span{
+		float: right;
+	}	
 	
 }
 
@@ -46,20 +75,30 @@
 		display: block;
 	}
 
-	nav ul li a{
+}
+
+@media (min-width: 610px){
+	body{
+		background-color: magenta;
 		color: white;
 	}
 
-	nav ul li a:hover{
-		color: #333;
-		text-decoration: none;
-	}
-	
-}
-
-@media (min-width: 584px){
 	nav ul li{
 		display: inline;
+		float: none;
+	}
+
+	#menu{
+		display: none;
+	}
+
+	nav{
+		display: block;
+		background: none;
+	}
+
+	nav ul li a{
+		color: white;
 	}
 }
 
@@ -74,6 +113,7 @@
 	#barra{
 		display: block;
 	}
+
 
 	.col-1 { width: 8.333%; }
 	.col-2 { width: 16.666%; }
